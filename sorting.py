@@ -7,17 +7,10 @@ def bubble(ary):
         times -= 1
         for i in range(times):
             if ary[i] > ary[i+1]:
+                swap = ary[i+1]
+                ary[i+1] = ary[i]
+                ary[i] = swap
                 sorted = False
-                checking = 0
-                while not(not(i+checking < times) and ary[i] > ary[i + checking]):
-                    checking += 1
-                    print("i",i)
-                    print("check",checking)
-                    print("times",times)
-            swap = ary[i]
-            ary[i] = ary[i + checking]
-            ary[i + checking]= swap
-            print(ary)
     return ary
 
 
