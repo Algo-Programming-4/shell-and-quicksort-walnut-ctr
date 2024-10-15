@@ -47,12 +47,10 @@ def partition(numbers, start_index, end_index):
     pivot = numbers[midpoint]
     low = start_index
     high = end_index
-   
     done = False
     while not done:
         while numbers[low] < pivot:
             low = low + 1
-      
         while pivot < numbers[high]:
             high = high - 1
         if low >= high:
