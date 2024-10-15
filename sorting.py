@@ -65,12 +65,12 @@ def partition(numbers, start_index, end_index):
             high = high - 1
     return high
 
-def quickSort(numbers, start_index, end_index):
+def quicksort(numbers, start_index, end_index):
     if end_index <= start_index:
         return
     high = partition(numbers, start_index, end_index)
-    quickSort(numbers, start_index, high)
-    quickSort(numbers, high + 1, end_index)
+    quicksort(numbers, start_index, high)
+    quicksort(numbers, high + 1, end_index)
 
 
 def interlev(ary,start,gap):
